@@ -16,7 +16,7 @@
 |Column|Type|Options|
 |------|----|-------|
 |image|text|--------|
-|messages|string|null: false|
+|messages|string|---|
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
 ### Association
@@ -26,7 +26,7 @@
 ## groups
 |Column|Type|Options|
 |------|----|-------|
-|group_name|string|null: false|
+|name|string|null: false|
 ### Association
 -has_many :users,through:groups_users
 -has_many :messages
