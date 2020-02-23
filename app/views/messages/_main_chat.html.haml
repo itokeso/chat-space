@@ -1,0 +1,44 @@
+.chat-main
+  .chat-main__header
+    .chat-main__header__left
+      .chat-main__header__left__group
+        hukuoka
+      .chat-main__header__left__member
+        member: ito
+    =link_to "Edit","#", class:'chat-main__header__edit-btn'
+  .chat-main__content
+    .chat-main__content__box
+      .chat-main__content__box__top   
+        .chat-main__content__box__top__name
+          ito
+        .chat-main__content__box__top__date
+          2020/02/03
+      .chat-main__content__box__message
+        初めまして
+
+    .chat-main__content__box
+      .chat-main__content__box__top   
+        .chat-main__content__box__top__name
+          ito
+        .chat-main__content__box__top__date
+          2020/02/03
+      .chat-main__content__box__message
+        初めまして
+    .chat-main__content__box
+      .chat-main__content__box__top   
+        .chat-main__content__box__top__name
+          ito
+        .chat-main__content__box__top__date
+          2020/02/03
+      .chat-main__content__box__message
+        初めまして
+
+  .chat-main__form
+    %form.new-message
+      .input-box
+        %input{type: "text", class: "input-box__text",placeholder: "type a message"}
+        %label{class: "input-box__image"}
+          = icon('fas','image')
+          %input{type: "file", class: "input-box__image__file"}
+      %input{type: "submit",class: "submit-btn"}
+      
