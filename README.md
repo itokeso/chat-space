@@ -2,8 +2,8 @@
 #chat-space DB設計
 
 ##  usersテーブル  
-｜Column｜Type｜Options｜
-|------|----|------|
+|Column|Type|Options|
+|------|----|-------|
 |name |string|null: false|
 |e-mail|string|null: false|
 |password|string|null: false|
